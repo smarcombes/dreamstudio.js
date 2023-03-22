@@ -36,7 +36,7 @@ export async function textToImg({
     weight: number;
   }>;
 }) {
-  const url = `${apiHost}/v1alpha/generation/${engineId}/text-to-image`;
+  const url = `${apiHost}/v1/generation/${engineId}/text-to-image`;
 
   if (!apiKey) throw new Error('Missing Stability API key.');
 
